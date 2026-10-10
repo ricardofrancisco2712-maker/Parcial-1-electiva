@@ -29,6 +29,6 @@ jobs:
           SURGE_DOMAIN: ${{ secrets.SURGE_DOMAIN }}
         run: |
           # Si SURGE_DOMAIN no está definido en secrets, se usa un subdominio por defecto
-          TARGET_DOMAIN="${SURGE_DOMAIN:-ricardo-caama-o.surge.sh}"
+          TARGET_DOMAIN="${SURGE_DOMAIN:-ricardo-practica-itla.surge.sh}"
           echo "Iniciando despliegue hacia: $TARGET_DOMAIN"
           surge ./ "$TARGET_DOMAIN" --token "$SURGE_TOKEN"
