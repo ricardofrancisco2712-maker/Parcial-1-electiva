@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Descargar el codigo
-        uses: actions/rcaamano@surge.com
+        uses: actions/checkout@v4
 
       - name: Instalar Surge
         run: npm install -g surge
