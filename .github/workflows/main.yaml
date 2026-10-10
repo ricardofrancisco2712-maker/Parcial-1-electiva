@@ -32,3 +32,5 @@ jobs:
           TARGET_DOMAIN="${SURGE_DOMAIN:-ricardo-practica-itla.surge.sh}"
           echo "Iniciando despliegue hacia: $TARGET_DOMAIN"
           surge ./ "$TARGET_DOMAIN" --token "$SURGE_TOKEN"
+
+          surge publish
